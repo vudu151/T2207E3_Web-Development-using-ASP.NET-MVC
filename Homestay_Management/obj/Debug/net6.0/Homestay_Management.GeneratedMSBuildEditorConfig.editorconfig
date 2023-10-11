@@ -1,0 +1,129 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Homestay_Management
+build_property.RootNamespace = Homestay_Management
+build_property.ProjectDir = D:\Documents\FPT Aptech\T2207E_SEM3\T2207E3_Web-Development-using-ASP.NET-MVC\Project_Homestay_Management\Homestay_Management\Homestay_Management\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Documents\FPT Aptech\T2207E_SEM3\T2207E3_Web-Development-using-ASP.NET-MVC\Project_Homestay_Management\Homestay_Management\Homestay_Management
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Documents/FPT Aptech/T2207E_SEM3/T2207E3_Web-Development-using-ASP.NET-MVC/Project_Homestay_Management/Homestay_Management/Homestay_Management/Areas/Admin/Views/Room/AddRoom.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUm9vbVxBZGRSb29tLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/FPT Aptech/T2207E_SEM3/T2207E3_Web-Development-using-ASP.NET-MVC/Project_Homestay_Management/Homestay_Management/Homestay_Management/Areas/Admin/Views/Room/EditRoom.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUm9vbVxFZGl0Um9vbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/FPT Aptech/T2207E_SEM3/T2207E3_Web-Development-using-ASP.NET-MVC/Project_Homestay_Management/Homestay_Management/Homestay_Management/Areas/Admin/Views/Room/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUm9vbVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/FPT Aptech/T2207E_SEM3/T2207E3_Web-Development-using-ASP.NET-MVC/Project_Homestay_Management/Homestay_Management/Homestay_Management/Areas/Admin/Views/Room/ListRoom.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUm9vbVxMaXN0Um9vbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/FPT Aptech/T2207E_SEM3/T2207E3_Web-Development-using-ASP.NET-MVC/Project_Homestay_Management/Homestay_Management/Homestay_Management/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/FPT Aptech/T2207E_SEM3/T2207E3_Web-Development-using-ASP.NET-MVC/Project_Homestay_Management/Homestay_Management/Homestay_Management/Areas/Admin/Views/TypeRoom/AddTypeRoom.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVHlwZVJvb21cQWRkVHlwZVJvb20uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/FPT Aptech/T2207E_SEM3/T2207E3_Web-Development-using-ASP.NET-MVC/Project_Homestay_Management/Homestay_Management/Homestay_Management/Areas/Admin/Views/TypeRoom/EditTypeRoom.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVHlwZVJvb21cRWRpdFR5cGVSb29tLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/FPT Aptech/T2207E_SEM3/T2207E3_Web-Development-using-ASP.NET-MVC/Project_Homestay_Management/Homestay_Management/Homestay_Management/Areas/Admin/Views/TypeRoom/ListTypeRoom.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVHlwZVJvb21cTGlzdFR5cGVSb29tLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/FPT Aptech/T2207E_SEM3/T2207E3_Web-Development-using-ASP.NET-MVC/Project_Homestay_Management/Homestay_Management/Homestay_Management/Views/AboutUs/AboutUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRVc1xBYm91dFVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/FPT Aptech/T2207E_SEM3/T2207E3_Web-Development-using-ASP.NET-MVC/Project_Homestay_Management/Homestay_Management/Homestay_Management/Views/Access/ForgotPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjZXNzXEZvcmdvdFBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/FPT Aptech/T2207E_SEM3/T2207E3_Web-Development-using-ASP.NET-MVC/Project_Homestay_Management/Homestay_Management/Homestay_Management/Views/Access/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjZXNzXExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/FPT Aptech/T2207E_SEM3/T2207E3_Web-Development-using-ASP.NET-MVC/Project_Homestay_Management/Homestay_Management/Homestay_Management/Views/Access/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjZXNzXFJlZ2lzdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/FPT Aptech/T2207E_SEM3/T2207E3_Web-Development-using-ASP.NET-MVC/Project_Homestay_Management/Homestay_Management/Homestay_Management/Views/Contact/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxDb250YWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/FPT Aptech/T2207E_SEM3/T2207E3_Web-Development-using-ASP.NET-MVC/Project_Homestay_Management/Homestay_Management/Homestay_Management/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/FPT Aptech/T2207E_SEM3/T2207E3_Web-Development-using-ASP.NET-MVC/Project_Homestay_Management/Homestay_Management/Homestay_Management/Views/New-details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3LWRldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/FPT Aptech/T2207E_SEM3/T2207E3_Web-Development-using-ASP.NET-MVC/Project_Homestay_Management/Homestay_Management/Homestay_Management/Views/News/News.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3c1xOZXdzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/FPT Aptech/T2207E_SEM3/T2207E3_Web-Development-using-ASP.NET-MVC/Project_Homestay_Management/Homestay_Management/Homestay_Management/Views/News/NewsDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3c1xOZXdzRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/FPT Aptech/T2207E_SEM3/T2207E3_Web-Development-using-ASP.NET-MVC/Project_Homestay_Management/Homestay_Management/Homestay_Management/Views/Rooms/ListRoom.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbXNcTGlzdFJvb20uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/FPT Aptech/T2207E_SEM3/T2207E3_Web-Development-using-ASP.NET-MVC/Project_Homestay_Management/Homestay_Management/Homestay_Management/Views/Rooms/RoomDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbXNcUm9vbURldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/FPT Aptech/T2207E_SEM3/T2207E3_Web-Development-using-ASP.NET-MVC/Project_Homestay_Management/Homestay_Management/Homestay_Management/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/FPT Aptech/T2207E_SEM3/T2207E3_Web-Development-using-ASP.NET-MVC/Project_Homestay_Management/Homestay_Management/Homestay_Management/Views/Shared/_FooterPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb290ZXJQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/FPT Aptech/T2207E_SEM3/T2207E3_Web-Development-using-ASP.NET-MVC/Project_Homestay_Management/Homestay_Management/Homestay_Management/Views/Shared/_HeaderPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9IZWFkZXJQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/FPT Aptech/T2207E_SEM3/T2207E3_Web-Development-using-ASP.NET-MVC/Project_Homestay_Management/Homestay_Management/Homestay_Management/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/FPT Aptech/T2207E_SEM3/T2207E3_Web-Development-using-ASP.NET-MVC/Project_Homestay_Management/Homestay_Management/Homestay_Management/Views/Shared/_Message.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9NZXNzYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/FPT Aptech/T2207E_SEM3/T2207E3_Web-Development-using-ASP.NET-MVC/Project_Homestay_Management/Homestay_Management/Homestay_Management/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/FPT Aptech/T2207E_SEM3/T2207E3_Web-Development-using-ASP.NET-MVC/Project_Homestay_Management/Homestay_Management/Homestay_Management/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/FPT Aptech/T2207E_SEM3/T2207E3_Web-Development-using-ASP.NET-MVC/Project_Homestay_Management/Homestay_Management/Homestay_Management/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/FPT Aptech/T2207E_SEM3/T2207E3_Web-Development-using-ASP.NET-MVC/Project_Homestay_Management/Homestay_Management/Homestay_Management/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-fjx3twz7xe

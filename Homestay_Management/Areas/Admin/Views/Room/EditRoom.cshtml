@@ -1,0 +1,119 @@
+﻿@model Homestay_Management.Models.RoomModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "EditRoom";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+
+}
+
+<h1>Edit Room</h1>
+
+<hr />
+
+<form method="post" enctype="multipart/form-data" action="editroom?roomId=@Model.Id">
+    <div class="row">
+        <div class="col-md-6">
+            @Html.AntiForgeryToken()
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Price" class="control-label"></label>
+                <input asp-for="Price" class="form-control" type="number" min="500" max="3000" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Size" class="control-label"></label>
+                <input asp-for="Size" class="form-control" type="number" min="10" max="100" />
+                <span asp-validation-for="Size" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Capacity" class="control-label"></label>
+                <input asp-for="Capacity" class="form-control" type="number" min="1" max="6" />
+                <span asp-validation-for="Capacity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TypeRoomId" class="control-label"></label>
+                <select asp-for="TypeRoomId" class="form-control" asp-items="ViewBag.TypeRoomId"></select>
+                <span asp-validation-for="TypeRoomId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Device" class="control-label"></label>
+                <input asp-for="Device" class="form-control" />
+                <span asp-validation-for="Device" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Status" class="control-label"></label>
+                <select asp-for="Status" class="form-control">
+                    <option value="Available">Available</option>
+                    <option value="Unavailable">Unavailable</option>
+                </select>
+                <span asp-validation-for="Status" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="form-group">
+                <div>
+                    <label asp-for="Image" class="control-label"></label> <!--asp-for liên kết với Image bên Models-->
+                    <input asp-for="Image" class="form-control" hidden />
+                    <input type="file" id="newImage" name="file" class="form-control" />
+                    <span asp-validation-for="Image" class="text-danger"></span>
+                </div>
+                <img src="@Model.Image" id="currentImage" alt="Room Image" style="max-width: 100%; max-height: 100%;width: 600px; height: 350px" />
+            </div>
+            <textarea id="editor" name="Description">
+                @Html.Raw(Model.Description)
+            </textarea>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div>
+                <a asp-action="ListRoom" class="btn btn-dark" style="text-decoration: none">Back to List</a>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+
+</form>
+
+
+<!--Sử dụng CKEDITOR-->
+<script src="https://cdn.ckeditor.com/ckeditor5/40.0.0/classic/ckeditor.js"></script>
+<script>
+    ClassicEditor
+        .create(document.querySelector('#editor'))
+        .catch(error => {
+            console.error(error);
+        });
+</script>
+
+<!--Event reload img-->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var newImageInput = document.getElementById('newImage');
+        var currentImage = document.getElementById('currentImage');
+
+        newImageInput.addEventListener('change', function () {
+            var selectedFile = this.files[0];
+            if (selectedFile) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    currentImage.src = e.ta rget.result;
+                };
+                reader.readAsDataURL(selectedFile);
+            }
+        });
+    });
+</script>

@@ -1,0 +1,173 @@
+﻿        
+<!--Phân trang thì bên này cần thêm những thứ sau-->
+@using Homestay_Management.Models;
+@using X.PagedList.Mvc.Core;
+@model X.PagedList.IPagedList<RoomModel>
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "ListRoom";
+    //Thêm đường dẫn Layout để add các html header,sidebar có sẵn
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1>List Room</h1>
+
+@* Thông báo xóa sản phẩm có thành công hay không *@
+<p>@TempData["Message"]</p>
+
+<p>
+    <a asp-action="AddRoom">Create New</a>
+</p>
+
+<div class="table-container">
+    <table class="table">
+        <thead>
+            <tr class="table-warning">
+                <th>
+                    @Html.DisplayNameFor(model => model[0].Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model[0].Price)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model[0].Size)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model[0].Capacity)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model[0].TypeRoom)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model[0].Image)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model[0].Device)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model[0].Description)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model[0].Status)
+                </th>
+                <th>Operation</th>
+            </tr>
+        </thead>
+        <tbody>
+            @* @{
+            int i = 0;
+            string @cls = "table-success";
+            } *@
+            @foreach (var item in Model)
+            {
+                @* i = i + 1;       //Đây là đoạn code thay đổi màu sắc theo các hàng
+            cls = "table-success";
+            if(i%2==0)
+            {
+            cls = "table-primary";
+            } *@
+                <tr class="table-success">
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Price)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Size)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Capacity)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TypeRoom.Description)
+                    </td>
+                    <td>
+                        <img src="@item.Image" alt="Room Image" style="border-radius: 0%; width: 75px;height: 45px;max-width: 100%; max-height: 100%;" />
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Device)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Description)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Status)
+                    </td>
+                    <td>
+                        <a asp-action="EditRoom" asp-route-roomId="@item.Id">Edit</a> |
+                        @* <a asp-action="Details" asp-route-id="@item.Id">Details</a> | *@
+                        <a asp-action="DeleteRoom" asp-route-roomId="@item.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>
+
+
+<!--Pagination-->
+@Html.PagedListPager(Model, page=>Url.Action("listroom", "admin", new {page=page}),
+                    new X.PagedList.Web.Common.PagedListRenderOptions(){
+                        LiElementClasses = new List<String> {"page-item"},
+                        PageClasses = new List<String> {"page-link"}
+                    })
+
+
+<!--CSS của trang này-->
+<style>
+    .table-container {
+        overflow-x: auto;
+    }
+
+    table.table {
+        width: 100%;
+    }
+
+        table.table th {
+            text-align: left;
+        }
+
+            table.table th:nth-child(1) {
+                width: 8%;
+            }
+
+            table.table th:nth-child(2) {
+                width: 8%;
+            }
+
+            table.table th:nth-child(3) {
+                width: 8%;
+            }
+
+            table.table th:nth-child(4) {
+                width: 8%;
+            }
+
+            table.table th:nth-child(5) {
+                width: 10%;
+            }
+
+            table.table th:nth-child(6) {
+                width: 10%;
+            }
+
+            table.table th:nth-child(7) {
+                width: 12%;
+            }
+
+            table.table th:nth-child(8) {
+                width: 18%;
+            }
+
+            table.table th:nth-child(9) {
+                width: 8%;
+            }
+
+            table.table th:nth-child(10) {
+                width: 10%;
+            }
+</style>

@@ -1,0 +1,57 @@
+﻿@using Homestay_Management.Models;
+@using X.PagedList.Mvc.Core;
+@model X.PagedList.IPagedList<TypeRoomModel>
+
+@* add tagHelper *@
+@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers    
+
+@{
+    ViewData["Title"] = "ListTypeRoom";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";   //add Layout
+}
+
+<h1>List Type Room</h1>
+
+<p>@TempData["Message"]</p>    @* Thông báo xóa kiểu phòng thành công hay không *@
+
+<p>
+    <a asp-action="AddTypeRoom">Create New</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr class="table-warning">
+            <th>
+                @Html.DisplayNameFor(model => model[0].Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model[0].Description)
+            </th>
+            <th>Operation</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model) {
+        <tr class="table-success">
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                <a asp-action="EditTypeRoom" asp-route-typeRoomId="@item.Id">Edit</a> |
+                @* <a asp-action="Details" asp-route-id="@item.Id">Details</a> | *@
+                <a asp-action="DeleteTypeRoom" asp-route-typeRoomId="@item.Id">Delete</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+<!--Pagination-->
+@Html.PagedListPager(Model, page=>Url.Action("ListTypeRoom", "Admin", new {page = page}),
+                    new X.PagedList.Web.Common.PagedListRenderOptions(){
+                        LiElementClasses = new List<String> {"page-item"},
+                        PageClasses = new List<String> {"page-link"}
+                    })
